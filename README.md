@@ -1,0 +1,1 @@
+# Easy Git Config by RUST
