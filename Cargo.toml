@@ -1,7 +1,17 @@
 [package]
 name = "easy-git"
 version = "0.1.0"
+authors = ["gildembergleite <gildembergleite@gmail.com>"]
 edition = "2021"
+description = "Uma ferramenta interativa para gerenciar usuários Git em repositórios locais e globais."
+license = "MIT"
+repository = "https://github.com/gildembergleite/easy-git"
+readme = "README.md"
+keywords = ["git", "config", "cli", "tool"]
+categories = ["development-tools", "version-control"]
+homepage = "https://github.com/gildembergleite/easy-git"
+documentation = "https://github.com/gildembergleite/easy-git"
+rust-version = "1.78"
 
 [dependencies]
 git2 = "0.18.3"
