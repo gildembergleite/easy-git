@@ -9,9 +9,10 @@ Gerenciador de usuários GIT
   - [Introdução](#introdução)
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação do Rust e Cargo](#instalação-do-rust-e-cargo)
-    - [Linux e MacOS](#linux-e-macos)
+    - [Linux](#linux)
     - [Windows](#windows)
-  - [Compilação e Instalação do easy-git](#compilação-e-instalação-do-easy-git)
+  - [Instalação do easy-git via cargo](#instalação-do-easy-git-via-cargo)
+  - [Compilação do easy-git](#compilação-do-easy-git)
     - [Passo 1: Clonar o Repositório](#passo-1-clonar-o-repositório)
     - [Passo 2: Compilar a Aplicação](#passo-2-compilar-a-aplicação)
     - [Passo 3: Instalar a Aplicação](#passo-3-instalar-a-aplicação)
@@ -30,7 +31,7 @@ Antes de instalar o `easy-git`, você precisa ter o Rust e o Cargo instalados em
 
 ## Instalação do Rust e Cargo
 
-### Linux e MacOS
+### Linux
 
 1. Abra seu terminal.
 2. Execute o seguinte comando para instalar o Rust e o Cargo:
@@ -60,7 +61,15 @@ cargo --version
 
 Você deve ver a versão do Rust e do Cargo instalados.
 
-## Compilação e Instalação do easy-git
+## Instalação do easy-git via cargo
+
+No seu terminal você pode instalar direto do crates utilizando o cargo, basta rodar o comando abaixo:
+
+```sh
+cargo install easy-git
+```
+
+## Compilação do easy-git
 
 ### Passo 1: Clonar o Repositório
 
@@ -79,13 +88,6 @@ cd easy-git
 cargo build --release
 ```
 
-**MacOS:**
-
-```sh
-rustup target add x86_64-apple-darwin
-cargo build --release --target x86_64-apple-darwin
-```
-
 **Windows:**
 
 ```sh
@@ -97,7 +99,7 @@ cargo build --release --target x86_64-pc-windows-gnu
 
 Após a compilação, o binário estará disponível na pasta `target/release/`. Para instalar o easy-git, mova o binário para um diretório que esteja no seu PATH.
 
-**Linux e MacOS:**
+**Linux:**
 
 ```sh
 sudo cp target/release/easy-git /usr/local/bin/
