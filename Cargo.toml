@@ -1,6 +1,6 @@
 [package]
 name = "easy-git"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["gildembergleite <gildembergleite@gmail.com>"]
 edition = "2021"
 description = "Uma ferramenta interativa para gerenciar usuários Git em repositórios locais e globais."
